@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <title>DS Designer Share</title>
+        <link href="stylesheet.css" rel="stylesheet" type="text/css">
+        <script type="text/javascript" language="javascript" src="js/photogrid.js"></script>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+        
+        
+    </head>
+    <body>
+        <div id="wrapper">
+            <ul id="nav">
+                <div id="span"></div>
+                <a>
+                    <li>
+                        </font>
+                    </li>
+                </a>
+                <a href="#content">
+                    <li>Home</font>
+                    </li>
+                </a>
+                <a>
+                    <li>
+                        </font>
+                    </li>
+                </a>
+                <a href="#content1">
+                    <li>Latest</font>
+                    </li>
+                </a>
+                <a>
+                    <li>
+                        </font>
+                    </li>
+                </a>
+                <a href="#content2">
+                    <li>Post</font>
+                    </li>
+                </a>
+                <a>
+                    <li>
+                        </font>
+                    </li>
+                </a>
+                <a href="#content3">
+                    <li>Contact</font>
+                    </li>
+                </a>
+                <a>
+                    <li>
+                        </font>
+                    </li>
+                </a>
+            </ul>
+        </div>
+        <div id="content"><img id="last" src="img/logo.png" /></div>
+        <!--Creating button for login-->
+        <button id="loginBtn" onclick="displayLoginModal()">Login</button>
+        <!--The login modal -->
+        <div id="login" class="modal" onclick="displayLoginModal()">
+            <div class="loginContainer">
+                <button onclick="displayLoginModal()" class="closeButton"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <h3>LOGIN</h3>
+                <form action="">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter username...">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter password...">
+                    <input type="submit" value="SIGN IN">
+                </form>
+            </div>
+        </div>
+        <!--Creating button for register-->
+        <button id="registerBtn" onclick="displayRegisterModal()">Register</button>
+        <!--The register modal-->
+        <div id="register" class="modal1" onclick="displayRegisterModal()">
+            <div class="registerContainer">
+                <button onclick="displayRegisterModal()" class="closeButton1"><i class="fa fa-times" aria-hidden="true"></i></button>
+                <h4>REGISTER</h4>
+                <form action="">
+                    <label>Name</label>
+                    <input type="text" placeholder="Enter name...">
+                    <label>Surname</label>
+                    <input type="text" placeholder="Enter surname...">
+                    <label>Username</label>
+                    <input type="text" placeholder="Enter username...">
+                    <label>Password</label>
+                    <input type="password" placeholder="Enter password...">
+                    <label>Confirm Password</label>
+                    <input type="password" placeholder="Enter password...">
+                    <input type="submit" value="REGISTER">
+                </form>
+            </div>
+        </div>
+
+        <div id="content1">
+           <h1>LATEST</h1>
+            <div class="carousel">
+              <div class="holder">
+                <img id="img" src="img/i1.jpg" alt="" />
+                <img id="img" src="img/i2.jpg" alt="" />
+                <img id="img" src="img/i3.jpg" alt="" />
+                <img id="img" src="img/i4.jpg" alt="" />
+                <img id="img" src="img/i5.jpg" alt="" />
+                <img id="img" src="img/i6.jpg" alt="" />
+                <img id="img" src="img/i7.jpg" alt="" />
+                <img id="img" src="img/i8.jpg" alt="" />
+                <img id="img" src="img/i9.jpg" alt="" />
+                <img id="img" src="img/i10.jpg" alt="" />
+                <img id="img" src="img/i11.jpg" alt="" />
+              </div>
+            </div>
+            <h3 id="text1">PRADA</h3>
+            <h3 id="text2">VERSACE</h3>
+            <h3 id="text3">VALENTINO</h3>
+            <video width="420" controls id="video1" >
+                <source src="vid/PradaFashionCatwalk.mp4" type="video/mp4">
+            </video>
+            <video width="420" controls id="video2" >
+                <source src="vid/Versace.mp4" type="video/mp4">
+            </video>
+            <video width="420" controls id="video3" >
+                <source src="vid/VALENTINO.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div id="content2" style=" background-color: #000000">
+            <div class="card-container">
+            <div class="card" style="--image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/448976/berlin.jpg'); --angle: -5deg; --x: 5%; --y: 15%; --caption: 'Berlin in 2009'"></div>
+            <div class="card" style="--image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/448976/london.jpg'); --angle: -1deg; --x: -10%; --y: -20%; --caption: 'London, 2001'"></div>
+            <div class="card" style="--image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/448976/los-angeles.jpg'); --angle: -4deg; --x: -20%; --y: 5%; --caption: 'Los Angeles - 2004'"></div>
+            <div class="card" style="--image: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/448976/italy.jpg'); --angle: 7deg; --x: 25%; --y: -7%; --caption: 'Venice, 1999'"></div>
+        </div>
+        </div>
+
+        <div id="content3" style=" background-color: #fff">
+            
+        </div>
+
+        <script type="text/javascript" language="javascript" src="js/slideAnim.js"></script>
+        <script type="text/javascript" language="javascript" src="js/loginmodal.js"></script>
+    </body>
+    <div class="content">Follow Us</div>
+    <div class="footer">
+        <div> 
+            <img src="img/facebook.png" class="social">&#62217;
+            <img src="img/twitter.png" class="social">&#62223;
+            <img src="img/google+.png" class="social">&#62232;
+            <img src="img/instagram.png" class="social">&#62235;
+        </div>
+    <div class="content2"> 
+        DESIGNERSHARE.COM<br/>
+        2017 Noman Niazi All Rights Reserved</div>
+</html>
+
+<!-- <div class="footer">
+        <div id="footerInfo">
+            About Use
+        </div>
+        <div id="footerInfo2">
+            Designer Share's aim is to open up a new and exclusive high<br/>
+            end fashion design sharing plateform. It is aimed at anyone<br/>
+            that is intrested designer fashion and would like to share<br/>
+            their outfit with others that are to intrested. Users are<br/>
+            able to register and login with the website and this will<br/>
+            add personalization.  
+        </div> 
+        <div id="socialIconPosition">
+            <img id="facebook" src="img/facebook.png">
+            <img id="twitter" src="img/twitter.png">
+            <img id="instagram" src="img/instagram.png">
+            <img id="snapchat" src="img/snapchat.png">
+        </div>
+        <div id="socialText">
+            Follow us on social media
+        </div>
+    </div> -->
+    <!-- <div id="form">
+        <form>      
+            <input name="name" type="text" class="feedback-input" placeholder="Name" />   
+            <input name="email" type="text" class="feedback-input" placeholder="Email" />
+            <textarea name="text" class="feedback-input" placeholder="Comment"></textarea>
+            <input type="submit" value="SUBMIT"/>
+        </form>
+    </div> -->
